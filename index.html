@@ -622,82 +622,6 @@
             text-align: center;
             padding: 20px;
         }
-        /* Responsif untuk HP */
-        @media (max-width: 768px) {
-            header {
-                padding: 50px 10px;
-            }
-            header h1 {
-                font-size: 2em;
-            }
-            nav a {
-                display: block;
-                margin: 10px 0;
-                padding: 10px;
-            }
-            section {
-                padding: 30px 10px;
-            }
-            h2 {
-                font-size: 2em;
-            }
-            .about {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .about-stats {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            .about-buttons {
-                justify-content: center;
-            }
-            .about img {
-                width: 150px;
-                height: 150px;
-            }
-            .skills {
-                grid-template-columns: 1fr;
-            }
-            .skill-card {
-                padding: 15px;
-            }
-            .skill-icon {
-                font-size: 2.5em;
-            }
-            .progress-bar {
-                height: 8px;
-            }
-            .projects {
-                grid-template-columns: 1fr; /* Stack vertikal di HP */
-            }
-            .project {
-                margin-bottom: 20px;
-                padding: 10px; /* Lebih kecil di HP */
-            }
-            .certificates {
-                grid-template-columns: 1fr;
-            }
-            .certificate-modal-content, .project-modal-content {
-                max-width: 95%;
-            }
-            .project-modal-content {
-                width: 95%;
-                margin: 10% auto;
-                padding: 20px;
-            }
-            .project-modal-content h3 {
-                font-size: 1.5em;
-            }
-            .contact-container {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            .contact-info, .contact-form {
-                padding: 25px;
-            }
-        }
-
         /* =======================
         FIX TAMPILAN HP
         ======================= */
@@ -753,10 +677,17 @@
         }
 
         .about-image-container::before {
-            width: 180px;
-            height: 180px;
-            margin: auto;
+        width: 160px;
+        height: 160px;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%) rotate(0deg);
+        animation: none;
+        opacity: 0.5;
         }
+
 
         .about img {
             width: 140px;
