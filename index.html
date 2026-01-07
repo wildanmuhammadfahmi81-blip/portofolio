@@ -698,6 +698,127 @@
             }
         }
 
+        /* =======================
+        FIX TAMPILAN HP
+        ======================= */
+        @media (max-width: 480px) {
+
+        body {
+            font-size: 14px;
+        }
+
+        /* HEADER */
+        header {
+            padding: 60px 15px;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            line-height: 1.3;
+        }
+
+        header p {
+            font-size: 0.95em;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav a {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.9em;
+        }
+
+        /* SECTION */
+        section {
+            padding: 30px 15px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        /* ABOUT */
+        .about {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .about-image-container::before {
+            width: 180px;
+            height: 180px;
+            margin: auto;
+        }
+
+        .about img {
+            width: 140px;
+            height: 140px;
+        }
+
+        .about-description {
+            font-size: 0.95em;
+        }
+
+        .about-badges {
+            justify-content: center;
+        }
+
+        .about-buttons {
+            justify-content: center;
+        }
+
+        /* SKILLS */
+        .skills {
+            grid-template-columns: 1fr;
+        }
+
+        .skill-card {
+            padding: 15px;
+        }
+
+        /* EXPERIENCE */
+        .experience-list {
+            grid-template-columns: 1fr;
+        }
+
+        /* PROJECT */
+        .projects {
+            grid-template-columns: 1fr;
+        }
+
+        .project img {
+            width: 100%;
+        }
+
+        /* CERTIFICATE */
+        .certificates {
+            grid-template-columns: 1fr;
+        }
+
+        /* CONTACT */
+        .contact-container {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-info,
+        .contact-form {
+            padding: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            font-size: 0.85em;
+        }
+        }
+
         .experience-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -861,14 +982,19 @@
 
     <section id="projects" class="projects">
         <h2>Proyek</h2>
-        <div class="project" data-title="Proyek 1: Website E-commerce" data-desc="Deskripsi lengkap proyek ini. Dibuat dengan HTML, CSS, dan JavaScript. Fitur: Shopping cart, payment gateway." data-img="project1.png" data-link=" https://wildanmuhammadfahmi81-blip.github.io/Profile-Wildan/">
+        <div class="project" data-title="Proyek 1: Website E-commerce" data-desc="Deskripsi lengkap proyek ini. Dibuat dengan HTML, CSS. Dengan Fitur: Beranda, Tentang yang berisi poto poto kegiatan, dan Kontak." data-img="project1.png" data-link=" https://wildanmuhammadfahmi81-blip.github.io/Profile-Wildan/">
             <img src="project1.png" alt="Proyek 1">
             <h3>Proyek 1: Website profile Wildan</h3>
-            <p>Deskripsi proyek ini. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+            <p>Deskripsi proyek ini. Dibuat dengan HTML,dan CSS saja.</p>
         </div>
         <div class="project" data-title="Proyek 2: Aplikasi Mobile" data-desc="Deskripsi lengkap proyek ini. Fokus pada desain responsif dan user experience." data-img="project2.png" data-link="https://web-desa.fwh.is/">
             <img src="project2.png" alt="Proyek 2">
-            <h3>Proyek 2: Pembuatan Web Desa Subang</h3>
+            <h3>Proyek 2: Pembuatan Portofolio</h3>
+            <p>Deskripsi proyek ini. Fokus pada desain responsif.</p>
+        </div>
+        <div class="project" data-title="Proyek 2: Aplikasi Mobile" data-desc="Deskripsi lengkap proyek ini. Fokus pada desain responsif dan user experience." data-img="project2.png" data-link="https://web-desa.fwh.is/">
+            <img src="project2.png" alt="Proyek 2">
+            <h3>Proyek 2: Pembuatan Web desa subang</h3>
             <p>Deskripsi proyek ini. Fokus pada desain responsif.</p>
         </div>
     </section>
@@ -878,11 +1004,11 @@
         <div class="certificate">
             <img src="sertif.png" alt="Sertifikat Web Development">
             <div class="certificate-caption">
-                <h3 class="certificate-title">Web Development Professional</h3>
-                <p class="certificate-org">Dicoding Indonesia</p>
+                <h3 class="certificate-title">Pelatihan BNSP</h3>
+                <p class="certificate-org">Conten Creator</p>
                 <p class="certificate-date">
                     <i class="ri-calendar-line"></i>
-                    Januari 2024
+                    oktober 2025
                 </p>
             </div>
         </div>
